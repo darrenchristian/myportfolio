@@ -1,0 +1,250 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'K2D', sans-serif;
+
+}
+
+body{
+	background-color: grey;
+	background-image: url("http://montreal.webdesign2k9.com/wp-content/uploads/2017/03/web-design-background-montreal-1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+main{
+	background-color: red;
+	min-height: 100vh;
+	background: rgb(212, 205, 205, 0.5);
+	border: solid transparent;
+	border-radius: 30px;
+/*	background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/04/29/70/37583fdf6f4050d.jpg");
+*/	
+	color: black;
+}
+
+.navitem{
+	margin-right: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navitem a:active{
+	font-weight: bolder;
+}
+.content{
+	text-align: center;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+.slider {
+/*  overflow: hidden;
+*/  position: relative;
+  text-align: center;
+}
+#mypic{
+	border: solid transparent;
+	border-radius: 200px;
+	margin-top: -150px;
+}
+.mask {
+  overflow: hidden;
+  height: 160px;
+  margin-top: -200px;
+}
+.slider .slide {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  transform: translate(-50%, -100%);
+  list-style: none;
+}
+.scrolldown{
+}
+
+.slider .slide.firstanimation {
+   animation: cycle 9s ease-in-out infinite;
+}
+.slider .slide.secondanimation {
+   animation: cycletwo 9s ease-in-out infinite;
+}
+.slider .slide.thirdanimation {
+   animation: cyclethree 9s ease-in-out infinite;
+}
+
+@keyframes cycle {
+  0%  { transform: translate(-50%, 0%); opacity: 1; } 
+  29% { transform: translate(-50%, 0%); opacity: 1; } 
+  33% { transform: translate(-50%, 100%); opacity: 0; } 
+  96% { transform: translate(-50%, -100%); opacity: 0; } 
+  100%{ transform: translate(-50%, 0%); opacity: 1; } 
+}
+@keyframes cycletwo {
+  0%  { transform: translate(-50%, -100%); opacity: 0; } 
+  29% { transform: translate(-50%, -100%); opacity: 0; } 
+  33% { transform: translate(-50%,    0%); opacity: 1; } 
+  62% { transform: translate(-50%,    0%); opacity: 1; } 
+  66% { transform: translate(-50%,  100%); opacity: 0; } 
+  100%{ transform: translate(-50%, -100%); opacity: 0; } 
+}
+@keyframes cyclethree {
+  0%  { transform: translate(-50%, -100%); opacity: 0; } 
+  62% { transform: translate(-50%, -100%); opacity: 0; } 
+  66% { transform: translate(-50%,    0%); opacity: 1; } 
+  96% { transform: translate(-50%,    0%); opacity: 1; }
+  100%{ transform: translate(-50%,  100%); opacity: 0; } 
+}
+.sc{
+/*	border: solid red;
+*/	margin-top: 50px;
+	
+}
+.icons{
+	width: 100%;
+	text-align: center;
+}
+.progress{
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	width: 50%;
+	margin-top: 15px;
+}
+.progress-bar{
+	width: 80%;
+}
+.pb{
+	width: 50%;
+}
+.pb2{
+	width: 30%;
+}
+.aboutme{
+	padding: 60px 0 0 0;
+}
+.resume{
+	width: 60%;
+}
+#arrow{
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+}
+#arrow:hover{
+	opacity: 0.5;
+}
+.about{
+	background-color: white;
+	min-height: 60vh;
+	border: solid black transparent;
+	border-radius: 30px;
+	background: rgb(212, 205, 205, 0.5);
+	color: black;
+	margin-top: 50px;
+}
+.portfolio{
+	background-color: white;
+	min-height: 75vh;
+	border: solid black transparent;
+	border-radius: 30px;
+	background: rgb(212, 205, 205, 0.5);
+	margin-top: 50px;
+	color: black;
+}
+.portfolio h1{
+	text-align: center;
+}
+.portfolio-items{
+}
+.contact{
+	background-color: white;
+	min-height: 50vh;
+	border: solid black transparent;
+	border-radius: 30px;
+	background: rgb(212, 205, 205, 0.5);
+	margin-top: 50px;
+	color: black;
+
+}
+.contactrs{
+	margin-top: 50px;
+	text-align: center;
+}
+.containerls{
+	margin-top: 100px;
+}
+.inputshadow{
+	-webkit-box-shadow: 0 0 0 6px #ccc;
+	box-shadow: 0 0 0 6px #ccc;
+}
+.submit{
+	text-align: right;
+}
+textarea{
+	width: 65%;
+	height: 160px;
+}
+.col-centered{
+	width: 100%;
+	margin: 0 auto;
+}
+footer{
+	background-color: grey;
+	margin-top: 30px;
+    width: 100%;
+}
+.footicons{
+	text-align: right;	
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+.card{
+	width: 18rem;
+}
+
+
+
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	.mask {
+	  overflow: hidden;
+	  height: 100px;
+	  margin-top: -130px;
+	}
+	.container{	
+		text-align: center;
+	}
+	#mypic{
+		margin-top: 150px;
+	}
+}
+/*phone*/
+@media only screen and (max-width: 400px){
+	.mask{
+		margin-top: -30px;
+	}
+	#mypic{
+		margin-top: 30px;
+	}
+	/*.container{
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.container-fluid{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#home{
+		padding: 0;
+	}
+	/*.contact{
+		text-align: center;
+		margin: 0;
+	}*/
+}
