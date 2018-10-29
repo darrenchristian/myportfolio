@@ -127,6 +127,10 @@ main{
 .resume{
 	width: 60%;
 }
+.dl-resume{
+	text-align: center;
+	margin: 0 auto;
+}
 #arrow{
 	animation-duration: 2.5s;
 	animation-iteration-count: infinite;
