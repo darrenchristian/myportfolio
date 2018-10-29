@@ -155,7 +155,11 @@ main{
 .portfolio h1{
 	text-align: center;
 }
-.portfolio-items{
+.portfolio-items .card{
+	min-height: 450px;
+}
+.portfolio-items img{
+	min-height: 250px;
 }
 .contact{
 	background-color: white;
