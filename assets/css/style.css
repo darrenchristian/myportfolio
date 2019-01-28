@@ -163,7 +163,7 @@ main{
 	min-height: 450px;
 }
 .portfolio-items img{
-	min-height: 250px;
+	height: 250px;
 }
 .contact{
 	background-color: white;
